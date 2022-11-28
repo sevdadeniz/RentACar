@@ -1,0 +1,58 @@
+﻿
+<div class="main-panel">
+    <div class="content-fluid">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Car Information
+                        </h4>
+                        <form asp-action="AddCar" asp-controller="Car" method="post">
+                            <div class="mb-3 mt-5">
+                                <label for="carName" class="form-label">Car Name</label>
+                                <input type="text" class="form-control" name="carName">
+
+                            </div>
+                            <div class="mb-3">
+                                <label for="stock" class="form-label">Stock</label>
+                                <input type="text" class="form-control" name="stock">
+                            </div>
+                            <div class="mb-3">
+                                <label for="image" class="form-label">İmage</label>
+                                <input type="text" class="form-control" name="image">
+                            </div>
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="text" class="form-control" name="price">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="details" class="form-label">Details</label>
+                                <input type="text" class="form-control" name="details">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="modelId" class="form-label">Model Id</label>
+                                <input type="text" class="form-control" name="modelId">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="categoryId" class="form-label">Category Id</label>
+                                <input type="text" class="form-control" name="categoryId">
+                            </div>
+
+                            <button type="submit" class="badge badge-outline-warning">Add Car</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
+    <!-- partial -->
+</div>

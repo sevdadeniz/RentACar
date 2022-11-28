@@ -1,0 +1,62 @@
+﻿@using EntityLayer.Concrete
+@model Car
+
+
+<!-- partial -->
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-12 grid-margin">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            Car Update
+                        </h4>
+                        <form asp-action="UpdateCar" asp-controller="Car" method="post">
+                            <div style="display:none" class="mb-3">
+                                <label for="carId" class="form-label">Car Id</label>
+                                <input readonly asp-for="carId" type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="carName" class="form-label">Car Name</label>
+                                <input asp-for="carName" type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="stock" class="form-label">Stock</label>
+                                <input type="text" class="form-control" asp-for="stock">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="price" class="form-label">Price</label>
+                                <input type="text" class="form-control" asp-for="price">
+                            </div>
+
+
+                            <div class="mb-3">
+                                <label for="details" class="form-label">Details</label>
+                                <input type="text" class="form-control" asp-for="details">
+                            </div>
+                            <div class="mb-3">
+                                <label for="modelId" class="form-label">Model Id</label>
+                                <input type="text" class="form-control" asp-for="modelId">
+                            </div>
+                            <div class="mb-3">
+                                <label for="categoryId" class="form-label">Category Id</label>
+                                <input type="text" class="form-control" asp-for="categoryId">
+                            </div>
+                           
+
+
+                            <button type="submit" class="badge badge-outline-warning">Update Car</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
+    <!-- partial -->
+</div>
+<!-- main-panel ends -->
